@@ -25,7 +25,7 @@ jobs:
     - name: Generate SBOM
       run: |
         mkdir SBOMOUTPUT
-        $RUNNER_TEMP/sbom-tool generate -b SBOMOUTPUT/ -bc . -pn ${{ github.repository }} -pv refkit-1.0.2 -ps wipro -nsb https://github.com/apache/kafka
+        $RUNNER_TEMP/sbom-tool generate -b SBOMOUTPUT/ -bc . -pn ${{ github.repository }} -pv refkit-1.0.2 -ps wipro -nsb https://github.com/apache/visual-quality-inspection
 
     - name: Upload SBOM artifact
       uses: actions/upload-artifact@v3
